@@ -30,12 +30,12 @@ function draw() {
 
 }
 
-var newY(int amplitude, int offset, var t) { 
+var newY(amplitude, offset, t) { 
   var y=sin(radians(t));
   y=y*amplitude+offset;
   return y;
 }
-var newX(int amplitude, int offset, var t){
+var newX(amplitude, offset, t){
   var x=cos(radians(t));
   x=x*amplitude+offset;
   return x;
