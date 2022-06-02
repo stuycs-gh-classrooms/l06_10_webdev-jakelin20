@@ -3,13 +3,13 @@ float cy;
 float theta;
 float theta2;
 
-void setup() { 
-  size (400,400);
+function setup() { 
+  createCanvas (400,400);
   background (255);
   frameRate (60);
 }
 
-void draw() {
+function draw() {
   float gradient;
   background (255);
   cy=newY(100,height/2,theta);  //100*sin(radians (theta)) + height/2;
@@ -30,12 +30,12 @@ void draw() {
 
 }
 
-float newY(int amplitude, int offset, float t) { 
+var newY(int amplitude, int offset, var t) { 
   float y=sin(radians(t));
   y=y*amplitude+offset;
   return y;
 }
-float newX(int amplitude, int offset, float t){
+var newX(int amplitude, int offset, var t){
   float x=cos(radians(t));
   x=x*amplitude+offset;
   return x;
