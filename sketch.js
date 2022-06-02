@@ -10,9 +10,9 @@ function setup() {
 }
 
 function draw() {
-  float gradient;
+  var gradient;
   background (255);
-  cy=newY(100,height/2,theta);  //100*sin(radians (theta)) + height/2;
+  cy=newY(100,height/2,theta);  
   cx=newX(100,width/2,theta);
   gradient=(theta2/60)*10;
   if (gradient>255) {
