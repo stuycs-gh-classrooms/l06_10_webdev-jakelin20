@@ -1,7 +1,7 @@
-float cx;
-float cy;
-float theta;
-float theta2;
+var cx;
+var cy;
+var theta;
+var theta2;
 
 function setup() { 
   createCanvas (400,400);
@@ -31,12 +31,12 @@ function draw() {
 }
 
 var newY(int amplitude, int offset, var t) { 
-  float y=sin(radians(t));
+  var y=sin(radians(t));
   y=y*amplitude+offset;
   return y;
 }
 var newX(int amplitude, int offset, var t){
-  float x=cos(radians(t));
+  var x=cos(radians(t));
   x=x*amplitude+offset;
   return x;
 }
